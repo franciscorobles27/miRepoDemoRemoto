@@ -1,0 +1,97 @@
+body {
+    margin: 50px;
+    background-image: linear-gradient(90deg, rgba(232, 214, 17, 1) 10%, rgba(204, 25, 25, 1) 94%);
+}
+
+img {
+    padding: 20px;
+    border-radius:50;
+    background-color: beige;
+}
+
+.image-main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    width: 300px;
+    text-align: center;
+    font-family: console, sans-serif;
+    color:white;
+    font-size: 70px;
+    transform: rotate(5deg);
+    text-shadow: 5px 5px 10px #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    background: black;
+    color:white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navigation {
+    font-size: 30px;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation a {
+    color:white;
+    background: cyan;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:link {
+    background-color: blue;
+    color:white;
+    text-decoration: none;
+    padding: 2px;
+}
+
+a:visited {
+    background-color: yellow;
+}
+
+a:hover {
+    background-color: transparent;
+    color:blue;
+    text-decoration: underline;
+}
+
+a:active{
+    color:red;
+}
+
+.div-recetas{
+    margin:10px;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+.div-apple {
+    background-color: rgb(170, 38, 5);
+    border-radius: 30px;
+
+}
+
+.div-chocolate {
+    background-color: darkgreen;
+
+}
+
+.div-fresa {
+    background-color: blue;
+
+}
