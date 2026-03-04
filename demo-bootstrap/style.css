@@ -1,12 +1,10 @@
-
-
 .container {
-    background-color: black;
-    height: 400px;
+    background-color: purple;
+    height: 800px;
 }
 
 .navbar {
-    padding: 2px;
+    padding: 2rem;
     background-color: lightblue;
 }
 
@@ -15,9 +13,8 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .navbar-brand {
         display: none;
     }
-
 }
