@@ -1,0 +1,23 @@
+{
+  "name": "first-backend",
+  "version": "1.0.0",
+  "description": "Primer Ejercicio practico de nodejs para backend",
+  "repository": {
+    "type": "git",
+    "url": "MiRepoDemoRemoto"
+  },
+  "license": "ISC",
+  "author": "Francisco Robles",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
