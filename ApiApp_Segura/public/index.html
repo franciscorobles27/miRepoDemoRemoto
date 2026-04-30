@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApiApp Segura</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <section class="login-screen" id="loginScreen">
+    <header class="login-header">
+      <a class="brand" href="/login" data-route aria-label="ApiApp Segura">
+        <span class="brand__mark">API</span>
+        <span>
+          <strong>ApiApp Segura</strong>
+          <small>Acceso independiente</small>
+        </span>
+      </a>
+    </header>
+
+    <main id="loginApp" aria-live="polite"></main>
+  </section>
+
+  <div class="app-shell" id="privateShell" hidden>
+    <aside class="sidebar">
+      <a class="brand" href="/home" data-route aria-label="ApiApp Segura">
+        <span class="brand__mark">API</span>
+        <span>
+          <strong>ApiApp Segura</strong>
+          <small>Cookie HttpOnly + ProtectedRoute</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegacion privada">
+        <a href="/home" data-route data-link="/home">Home</a>
+        <a href="/filtrar" data-route data-link="/filtrar">Filtrar</a>
+        <a href="/detalles" data-route data-link="/detalles">Detalles</a>
+      </nav>
+
+      <div class="session-card">
+        <span class="session-dot" id="sessionDot"></span>
+        <div>
+          <strong id="sessionTitle">Sesion cerrada</strong>
+          <p id="sessionText">Inicia sesion para entrar a las rutas protegidas.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Panel privado</p>
+          <h1 id="pageTitle">ApiApp Segura</h1>
+        </div>
+        <button class="ghost-button" id="logoutButton" type="button">Cerrar sesion</button>
+      </header>
+
+      <section id="app" class="view" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
