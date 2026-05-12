@@ -1,0 +1,21 @@
+{
+  "name": "chatmsg-fase2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chat en tiempo real con React, Express, WebSockets, cookies httpOnly y Redis pub/sub.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",
+    "dev:multi": "concurrently \"npm run dev:a -w server\" \"npm run dev:b -w server\" \"npm run dev -w client\"",
+    "start:a": "npm run start:a -w server",
+    "start:b": "npm run start:b -w server",
+    "build": "npm run build -w client",
+    "lint": "npm run lint -w client"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
