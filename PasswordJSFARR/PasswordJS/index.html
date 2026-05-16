@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h1>Mostrar / Ocultar Password</h1>
+            <p class="descripcion">Escribe una contraseña y usa el botón para mostrarla u ocultarla.</p>
+
+            <label for="password">Contraseña</label>
+
+            <div class="campo-password">
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Ingresa tu contraseña"
+                    autocomplete="off"
+                >
+                <button type="button" id="btnMostrar">Mostrar</button>
+            </div>
+
+            <p id="estado" class="estado">La contraseña está oculta.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

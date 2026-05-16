@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContadorJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Contador JS</h1>
+
+        <section class="tarjeta">
+            <p class="etiqueta">Valor actual</p>
+            <p id="contador" class="contador">0</p>
+
+            <div class="botones">
+                <button id="btnDisminuir" class="btn btn-rojo">Disminuir</button>
+                <button id="btnReiniciar" class="btn btn-gris">Reiniciar</button>
+                <button id="btnAumentar" class="btn btn-verde">Aumentar</button>
+            </div>
+
+            <div class="clics">
+                <p>Clics en aumentar: <span id="clicsAumentar">0</span></p>
+                <p>Clics en disminuir: <span id="clicsDisminuir">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

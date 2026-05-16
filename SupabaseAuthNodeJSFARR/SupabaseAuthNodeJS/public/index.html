@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Auth NodeJS</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h1>Supabase Authentication</h1>
+            <p class="descripcion">Login y registro usando Node.js, Express y Supabase.</p>
+
+            <div class="formularios">
+                <form action="/signup" method="POST">
+                    <h2>Crear cuenta</h2>
+
+                    <label for="signup-email">Correo</label>
+                    <input type="email" id="signup-email" name="email" placeholder="correo@ejemplo.com" required>
+
+                    <label for="signup-password">Contraseña</label>
+                    <input type="password" id="signup-password" name="password" placeholder="Mínimo 6 caracteres" required>
+
+                    <button type="submit">Registrarme</button>
+                </form>
+
+                <form action="/login" method="POST">
+                    <h2>Iniciar sesión</h2>
+
+                    <label for="login-email">Correo</label>
+                    <input type="email" id="login-email" name="email" placeholder="correo@ejemplo.com" required>
+
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" name="password" placeholder="Tu contraseña" required>
+
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 430px;
+}
+
+.tarjeta {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    color: #222;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #666;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.campo-password {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.estado {
+    margin-top: 18px;
+    text-align: center;
+    color: #444;
+    font-size: 14px;
+}
